@@ -2,7 +2,7 @@ FROM  ghcr.io/qlicks/magento-php-7.3:latest
 
 
 
-RUN composer global require --dev php-parallel-lint/php-parallel-lint && composer global require --dev phpro/grumphp
+RUN composer global require --dev php-parallel-lint/php-parallel-lint && composer global require --dev phpro/grumphp && \
     composer global require --dev "squizlabs/php_codesniffer=*" && \
     composer global require --dev magento/magento-coding-standard && \
     composer global require --dev friendsofphp/php-cs-fixer && \
