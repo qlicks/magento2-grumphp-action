@@ -52,11 +52,13 @@ grumphp:
     git_branch_name:
       whitelist:
          # allowed branch names: 'feature-1', 'feature-new', 'feature-new1', 'task-1', etc
-        - "/(hotfix|bugfix|feature|release|task)-([a-z|0-9]+)$/"
+        - "/(hotfix|bugfix|feature|release|task|issue|.*)-([a-z|0-9]+)$/"
       blacklist:
         - "development"
         - "production"
         - "staging"
+        - "STAGE"
+        - "stage"
         - "master"
         - "infra"
       allow_detached_head: true
