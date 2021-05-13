@@ -1,0 +1,6 @@
+name: 'Magento 2 GrumPHP test'
+description: 'Run magento 2 grumphp tests in github action without install grumphp'
+author: 'Misha Serbenyuk'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
