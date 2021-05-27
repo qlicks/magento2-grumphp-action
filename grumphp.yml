@@ -48,20 +48,6 @@ grumphp:
       case_insensitive: true
       multiline: false
       additional_modifiers: ''
-    # validate git branch names
-    git_branch_name:
-      whitelist:
-         # allowed branch names: 'feature-1', 'feature-new', 'feature-new1', 'task-1', etc
-        - "/(hotfix|bugfix|feature|release|task|issue|.*)-([a-z|0-9]+)$/"
-      blacklist:
-        - "development"
-        - "production"
-        - "staging"
-        - "STAGE"
-        - "stage"
-        - "master"
-        - "infra"
-      allow_detached_head: true
     # catch not allowed keywords
     git_blacklist:
       keywords:
