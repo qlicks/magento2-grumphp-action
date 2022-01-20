@@ -7,7 +7,6 @@ RUN composer2 global require --dev php-parallel-lint/php-parallel-lint && compos
     composer2 global require --dev magento/magento-coding-standard && \
     composer2 global require --dev friendsofphp/php-cs-fixer && \
     composer2 global require --dev phpstan/phpstan && \
-    composer2 global require --dev composer/xdebug-handler && \
     composer2 global require --dev phpmd/phpmd:2.8.2 && \
     /app-home/.composer/vendor/bin/phpcs --config-set installed_paths /app-home/.composer/vendor/magento/magento-coding-standard/
 
