@@ -1,4 +1,4 @@
-FROM  ghcr.io/qlicks/magento-php-7.4:latest
+FROM  ghcr.io/qlicks/magento-php-8.3:latest
 
 
 
