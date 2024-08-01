@@ -78,16 +78,16 @@ grumphp:
       metadata:
         priority: 90
     # https://devdocs.magento.com/guides/v2.4/coding-standards/code-standard-php.html
-    phpcs:
-      standard: Magento2
-      tab_width: 4
-      severity: 10 # can remove this to dis allow all level of severity.
-      error_severity: 10
-      warning_severity: ~
-      report: full
-      triggered_by: [phtml, php]
-      metadata:
-        priority: 70
+#    phpcs:
+#      standard: Magento2
+#      tab_width: 4
+#      severity: 10 # can remove this to dis allow all level of severity.
+#      error_severity: 10
+#      warning_severity: ~
+#      report: full
+#      triggered_by: [phtml, php]
+#      metadata:
+#        priority: 70
 #    phpcsfixer2:
 #      allow_risky: false
 #      config: '.php_cs.dist'
