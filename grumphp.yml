@@ -33,6 +33,19 @@ grumphp:
       strict: false
       metadata:
         priority: 80
+        
+    # Magento 2 Coding Standard    
+    phpcs:
+      standard: Magento2
+      tab_width: 4
+      severity: 10 # can remove this to dis allow all level of severity.
+      error_severity: 10
+      warning_severity: ~
+      report: full
+      triggered_by: [phtml, php]
+      metadata:
+        priority: 70
+        
     # validate git commit message
     git_commit_message:
       allow_empty_message: false
