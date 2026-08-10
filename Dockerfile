@@ -1,10 +1,10 @@
 FROM  ghcr.io/qlicks/magento-php-8.4:latest
 
+RUN composer self-update --2
 
-
-RUN composer2 global require --dev php-parallel-lint/php-parallel-lint && composer global require --dev phpro/grumphp && \
-    composer2 global require --dev "squizlabs/php_codesniffer=*" && \
-##    composer global require --dev magento/magento-coding-standard && \
+RUN composer global require --dev php-parallel-lint/php-parallel-lint && composer global require --dev phpro/grumphp && \
+    composer global require --dev "squizlabs/php_codesniffer=*" && \
+    composer global require --dev magento/magento-coding-standard && \
 #    composer global require --dev phpcompatibility/php-compatibility:dev-develop && \
 #    composer global require --dev dealerdirect/phpcodesniffer-composer-installer && \ 
     /app-home/.composer/vendor/bin/phpcs --config-set installed_paths /app-home/.composer/vendor/phpcompatibility/php-compatibility,/app-home/.composer/vendor/magento/magento-coding-standard/
